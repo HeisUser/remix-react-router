@@ -24,16 +24,16 @@ import {
     return (
       <>
         <Routes>
-            <Route path='/*' element={<HomeLayout />}> {/* First Layer */}
+            <Route path='/' element={<HomeLayout />}> {/* First Layer */}
             <Route index element={<HomePage />} />
             <Route path='about' element={<AboutPage />} />
     
-            <Route path='help/*' element={<HelpLayout />} >  {/* Second Layer of Help - Nested */}
+            <Route path='help' element={<HelpLayout />} >  {/* Second Layer of Help - Nested */}
                 <Route path='faq' element={<FaqPage />} />
                 <Route path='contact' element={<ContactPage />} />
             </Route>
     
-            <Route path='careers/*' element={<CareersLayout />}>  {/* Second Layer of Careers - Nested */}
+            <Route path='careers' element={<CareersLayout />}>  {/* Second Layer of Careers - Nested */}
                 <Route 
                 index
                 element={<CareersPage />}
